@@ -83,7 +83,7 @@ npm start
 #### application.properties
 ```properties
 # Server Configuration
-server.port=8080
+server.port=8070
 
 # Database Configuration (H2)
 spring.datasource.url=jdbc:h2:mem:testdb
@@ -109,7 +109,7 @@ spring.redis.port=6379
 
 ### Base URL
 ```
-http://localhost:8080/api
+http://localhost:8070/api
 ```
 
 ### Authentication
@@ -402,7 +402,7 @@ mvn jacoco:report
 
 #### Register
 ```bash
-curl -X POST http://localhost:8080/api/auth/register \
+curl -X POST http://localhost:8070/api/auth/register \
   -H "Content-Type: application/json" \
   -d '{
     "username": "testuser",
@@ -413,7 +413,7 @@ curl -X POST http://localhost:8080/api/auth/register \
 
 #### Login
 ```bash
-curl -X POST http://localhost:8080/api/auth/login \
+curl -X POST http://localhost:8070/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{
     "username": "testuser",
@@ -423,7 +423,7 @@ curl -X POST http://localhost:8080/api/auth/login \
 
 #### Create Product
 ```bash
-curl -X POST http://localhost:8080/api/products \
+curl -X POST http://localhost:8070/api/products \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer <jwt-token>" \
   -d '{
