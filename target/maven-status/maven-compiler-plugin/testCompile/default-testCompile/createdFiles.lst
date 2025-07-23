@@ -1,0 +1,4 @@
+com\productapi\controller\AuthControllerTest.class
+com\productapi\controller\ProductControllerTest.class
+com\productapi\service\ProductServiceTest.class
+com\productapi\ProductManagementApiApplicationTests.class
